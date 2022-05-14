@@ -13,6 +13,7 @@ Front end (Ngô Thế Nghĩa - B19DCCN464)
   - tạo các giao diện ( addproducts.html, deleteproducts.html, editproduct.html,  home.html products.html)
   - tạo các controller
   - tạo các class product 
+  
 Front end Phạm Việt Hoàng - B19DCCN284)
   - Fake API
   - Lấy dữ liệu từ API
