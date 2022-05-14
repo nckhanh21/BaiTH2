@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Product</title>
+	<link rel="stylesheet" th:href="@{/styles.css}" />
+	<style>table th, table td {padding: 5px;}</style>
+</head>
+<body>
+	<h1>Products</h1>
+	<table border="1">
+        <tr>
+          <th>code</th>
+          <th>description</th>
+          <th>price</th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr th:each="product : ${products}">
+          <td th:utext="${product.code}">code</td>
+          <td th:utext="${product.description}">description</td>
+          <td th:utext="${product.price}">price</td>
+          <td ></td>
+          <td ></td>
+        </tr>
+    </table>
+    <form action="add" method="get">
+            <button type="submit">ADD ITEM</button>
+        </form>
+</body>
+
+</html>

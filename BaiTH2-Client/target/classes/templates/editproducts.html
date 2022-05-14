@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Edit Product</title>
+	<link rel="stylesheet" th:href="@{/styles.css}" />
+</head>
+
+<body>
+	<h1>Product</h1>
+	<span style="color: red"></span>
+	<form action="edit" method="post">
+		<label>Code:</label>
+		<input type="text" name="code" required="true" value=""><br>
+		<label>Description: </label>
+		<input type="text" name="description" value=""><br>
+		<label>Price: </label>
+		<input type="text" name="price" required="true" value=""><br>
+
+		<button type="submit">Update Product</button>
+	</form>
+	<form action="/ProductList" method="get">
+		<button type="submit">View Product</button>
+	</form>
+
+</body>
+
+</html>
